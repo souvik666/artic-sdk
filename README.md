@@ -1,3 +1,4 @@
+![ArticSdk](https://i.pinimg.com/originals/22/26/a5/2226a53e0be2f56c78982ae08f493f3c.jpg)
 # ArticSdk Documentation
 
 ## Introduction

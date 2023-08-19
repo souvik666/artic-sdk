@@ -72,3 +72,16 @@ const searchedAgents = await agentInstance.search({
 
 # Contributions 🤝
 The ArticSdk project warmly welcomes contributions from the developer community. If you have ideas for enhancements, bug fixes, or new features, don't hesitate to fork the repository, implement your changes, and submit a pull request. By collaborating, we can collectively improve the ArticSdk and create an enhanced experience for all users of the Artic Framework.
+
+
+# 🎉 Shoutout to [Art Institute of Chicago API](https://api.artic.edu/docs/)🎨🏛️
+
+We want to extend our heartfelt appreciation to the Art Institute of Chicago for providing the remarkable Art Institute of Chicago API. This API has opened up a world of creative possibilities and enriched the way we access and engage with art-related information.
+
+The Art Institute of Chicago API empowers developers, art enthusiasts, and researchers to access a wealth of artistic and cultural data. With its well-documented endpoints and user-friendly resources, the API allows us to seamlessly explore the art world, gather insights, and create innovative applications.
+
+Whether it's exploring artworks, learning about artists, or discovering exhibitions, the Art Institute of Chicago API makes it all possible. The dedication of the API team in providing a reliable and informative resource is truly commendable.
+
+So, here's to the Art Institute of Chicago API—thank you for enriching our digital landscape and inspiring creativity. 🎨✨
+
+Check out the API documentation: [Art Institute of Chicago API Documentation](https://api.artic.edu/docs/)

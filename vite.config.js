@@ -1,15 +1,20 @@
 // vite.config.ts
-import { resolve } from 'path';
-import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts';
+import { resolve } from "path";
+import { defineConfig } from "vite";
+import dts from "vite-plugin-dts";
 // https://vitejs.dev/guide/build.html#library-mode
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'ArticSdk',
-      fileName: 'ArticSdk',
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "ArticSdk",
+      fileName: "ArticSdk",
     },
   },
-  plugins: [dts()],
+  plugins: [
+    dts({
+      insertTypesEntry: true,
+      rollupTypes: true,
+    }),
+  ],
 });

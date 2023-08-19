@@ -2,6 +2,7 @@
   "name": "ArticSdk",
   "description": "A Typescript SDK For Art Institute of Chicago API",
   "author": "souvik dutta",
+  "type": "module",
   "license": "MIT",
   "homepage": "https://github.com/souvik666/artic-sdk",
   "repository": {
@@ -20,13 +21,13 @@
   ],
   "private": true,
   "version": "0.0.0",
-  "main": "./dist/ArticSdk.umd.js",
-  "module": "./dist/ArticSdk.mjs",
+  "main": "./dist/ArticSdk.umd.cjs",
+  "module": "./dist/ArticSdk.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/ArticSdk.mjs",
-      "require": "./dist/ArticSdk.umd.js"
+      "import": "./dist/ArticSdk.js",
+      "require": "./dist/ArticSdk.umd.cjs"
     }
   },
   "scripts": {

@@ -12,8 +12,10 @@ export class PlaceService extends BaseService<IPlaceResponse, IBaseParams> {
   constructor() {
     super({ path: paths.places });
   }
+ 
   /**
-   ** PlaceService INSTANCE
+   * The above function is a singleton pattern implementation in TypeScript.
+   * @returns The getInstance method returns an instance of the PlaceService class.
    */
   public static get getInstance() {
     if (PlaceService.instance) return PlaceService.instance;

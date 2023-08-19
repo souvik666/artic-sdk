@@ -39,13 +39,4 @@ export interface Contexts {
   groupings: string[];
 }
 
-export interface Info {
-  license_text: string;
-  license_links: string[];
-  version: string;
-}
-
-export interface Config {
-  iiif_url: string;
-  website_url: string;
-}
+ 

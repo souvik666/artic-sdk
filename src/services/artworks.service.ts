@@ -16,9 +16,11 @@ export class Artwork extends BaseService<
   constructor() {
     super({ path: paths.artworks });
   }
-  /**
-   ** ARTWORK INSTANCE
-   */
+   
+/**
+ * The function returns an instance of the Artwork class, creating it if it doesn't already exist.
+ * @returns The `getInstance` method returns an instance of the `Artwork` class.
+ */
   public static get getInstance() {
     if (Artwork.instance) return Artwork.instance;
     else {

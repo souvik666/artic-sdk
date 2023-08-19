@@ -69,5 +69,5 @@ const searchedAgents = await agentInstance.search({
 
 
 
-## Contributions 🤝
+# Contributions 🤝
 The ArticSdk project warmly welcomes contributions from the developer community. If you have ideas for enhancements, bug fixes, or new features, don't hesitate to fork the repository, implement your changes, and submit a pull request. By collaborating, we can collectively improve the ArticSdk and create an enhanced experience for all users of the Artic Framework.

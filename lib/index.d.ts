@@ -1,1 +1,1 @@
-export { ArticSdk as Default } from "./services/sdk.service";
+export { ArticSdk as ArticSdk } from "./services/sdk.service";

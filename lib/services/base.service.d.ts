@@ -1,6 +1,13 @@
-import { AxiosResponse, AxiosRequestConfig } from "axios";
-import { IBaseParams, IBaseSearchParams, IBaseSearchResponse } from "../interfaces/base.response.type";
-type CBaseService = {
+import { AxiosResponse, AxiosRequestConfig } from 'axios';
+import { IBaseParams, IBaseSearchParams, IBaseSearchResponse } from '../interfaces/base.response.type';
+/**
+ * The above type defines a generic interface for making GET requests with optional configuration and
+ * parameters.
+ * @property {string} path - The `path` property is a string that represents the endpoint or URL path
+ * for a service. It is typically used in API requests to specify the location of the resource being
+ * accessed or modified.
+ */
+export type CBaseService = {
     path: string;
 };
 export type IGet<T> = {
@@ -11,18 +18,26 @@ export declare class BaseService<T, PT> {
     private readonly url;
     private axios;
     private path;
+    /**
+     * The constructor function initializes the axios instance and sets the base URL and path for the
+     * service.
+     * @param {CBaseService}  - The constructor function takes in an object with a property called `path`
+     * of type `CBaseService`. The `path` property is then assigned to the `this.path` property of the
+     * class instance.
+     */
     constructor({ path }: CBaseService);
     /**
-     *
-     * @param args {IGet<PT>} request arguments
-     * @returns {Promise<AxiosResponse<T[], any>>} get response
+     * The function is a TypeScript method that sends a GET request using Axios and returns a Promise
+     * that resolves to an AxiosResponse.
+     * @param [args] - The `args` parameter is an optional object that contains the following properties: {config, params}
+     * @returns a Promise that resolves to an AxiosResponse object.
      */
     get(args?: IGet<PT>): Promise<AxiosResponse<T, any>>;
     /**
-     *
-     * @param args
-     * @param reference - THE TARGET ID
-     * @returns
+     * The function `getOne` makes a GET request to a specified path with optional parameters and returns
+     * a Promise containing the Axios response.
+     * @param args - The `args` parameter is an object that contains two properties:{config, params}
+     * @returns a Promise that resolves to an AxiosResponse object.
      */
     getOne(args: IGet<object> & {
         reference?: string | number;
@@ -41,4 +56,3 @@ export declare class BaseService<T, PT> {
      */
     search<T>({ config, params, }: IGet<Partial<IBaseSearchParams & IBaseParams>>): Promise<AxiosResponse<T & IBaseSearchResponse, any>>;
 }
-export {};

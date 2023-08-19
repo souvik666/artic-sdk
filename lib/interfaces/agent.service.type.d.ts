@@ -1,6 +1,6 @@
-import { IBaseResponse } from "./base.response.type";
-export type IAgentResponse = IBaseResponse<Daum>;
-export interface Daum {
+import { IBaseResponse } from './base.response.type';
+export type IAgentResponse = IBaseResponse<IAGent>;
+export interface IAGent {
     id: number;
     api_model: string;
     api_link: string;
@@ -29,13 +29,4 @@ export interface Contexts {
 export interface SuggestAutocompleteBoosted {
     input: string[];
     weight: number;
-}
-export interface Info {
-    license_text: string;
-    license_links: string[];
-    version: string;
-}
-export interface Config {
-    iiif_url: string;
-    website_url: string;
 }

@@ -8,7 +8,9 @@ export declare class GalleryService extends BaseService<IPlaceResponse, IBasePar
     static instance: GalleryService | null;
     constructor();
     /**
-     ** GalleryService INSTANCE
+     * The above function is a static method in TypeScript that returns a single instance of the
+     * GalleryService class using the Singleton design pattern.
+     * @returns The `getInstance` method returns an instance of the `GalleryService` class.
      */
     static get getInstance(): GalleryService;
 }

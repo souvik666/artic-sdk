@@ -5,7 +5,8 @@ export declare class ProductService extends BaseService<IProductResponse, IBaseP
     static instance: ProductService | null;
     constructor();
     /**
-     ** ProductService INSTANCE
+     * The above function is a singleton pattern implementation in TypeScript.
+     * @returns The getInstance method returns an instance of the ProductService class.
      */
     static get getInstance(): ProductService;
 }

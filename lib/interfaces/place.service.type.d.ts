@@ -1,4 +1,5 @@
-import { IBaseResponse } from "./base.response.type";
+import { IBaseResponse } from './base.response.type';
+export type IPlaceResponse = IBaseResponse<IPlace>;
 export interface IPlace {
     id: number;
     api_model: string;
@@ -9,13 +10,3 @@ export interface IPlace {
     updated_at: string;
     timestamp: string;
 }
-export interface Info {
-    license_text: string;
-    license_links: string[];
-    version: string;
-}
-export interface Config {
-    iiif_url: string;
-    website_url: string;
-}
-export type IPlaceResponse = IBaseResponse<IPlace>;

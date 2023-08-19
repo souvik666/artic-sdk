@@ -10,7 +10,8 @@ export declare class PlaceService extends BaseService<IPlaceResponse, IBaseParam
     static instance: PlaceService | null;
     constructor();
     /**
-     ** PlaceService INSTANCE
+     * The above function is a singleton pattern implementation in TypeScript.
+     * @returns The getInstance method returns an instance of the PlaceService class.
      */
     static get getInstance(): PlaceService;
 }

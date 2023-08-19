@@ -25,7 +25,7 @@ export type IBaseParams = {
     ids: string;
     limit: number;
     page: number;
-    fields: "artist_pivots" | "dates" | "sites" | "place_pivots";
+    fields: 'artist_pivots' | 'dates' | 'sites' | 'place_pivots';
 };
 export type IBaseSearchParams = {
     q: string;
@@ -35,8 +35,8 @@ export type IBaseSearchParams = {
     size: string;
     facets: string;
 };
-export type IBaseSearchResponse = IBaseResponse<Daum>;
-export interface Daum {
+export type IBaseSearchResponse = IBaseResponse<IGlobalSearchResponse>;
+export interface IGlobalSearchResponse {
     _score: number;
     api_model: string;
     api_link: string;

@@ -1,18 +1,5 @@
 import { AxiosResponse } from "axios";
 import { IBaseResponse } from "./base.response.type";
-/**
- * Query Parameters for Resource Retrieval:
- * - ids: A comma-separated list of resource ids to retrieve
- * - limit: The number of resources to return per page
- * - page: The page of resources to retrieve
- * - fields: A comma-separated list of fields to return per resource
- * - include: A comma-separated list of subresources to embed in the returned resources.
- *   Available options are:
- *   - artist_pivots
- *   - dates
- *   - place_pivots
- *   - sites
- */
 export interface IArtwork {
     search(params: IArtworkSearch): Promise<AxiosResponse<IArtworkResponse, any>>;
 }
@@ -164,13 +151,4 @@ export interface SuggestAutocompleteAll {
 }
 export interface Contexts {
     groupings: string[];
-}
-export interface Info {
-    license_text: string;
-    license_links: string[];
-    version: string;
-}
-export interface Config {
-    iiif_url: string;
-    website_url: string;
 }

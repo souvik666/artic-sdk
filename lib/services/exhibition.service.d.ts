@@ -5,7 +5,8 @@ export declare class ExhibitionsService extends BaseService<IExhibitionResponse,
     static instance: ExhibitionsService | null;
     constructor();
     /**
-     ** ExhibitionsService INSTANCE
+     * The above function is a singleton pattern implementation in TypeScript.
+     * @returns The `getInstance` method returns an instance of the `ExhibitionsService` class.
      */
     static get getInstance(): ExhibitionsService;
 }

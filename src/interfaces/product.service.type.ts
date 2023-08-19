@@ -1,7 +1,13 @@
-import { IBaseResponse } from "./base.response.type";
+import { IBaseResponse } from './base.response.type';
 
 export type IProductResponse = IBaseResponse<IProduct>;
 
+
+/* The `IProduct` interface defines the structure of a product object. It specifies the properties and
+their types that a product object should have. Each property represents a specific attribute of a
+product, such as its ID, title, image URL, price, etc. The interface also includes arrays
+(`artist_ids`, `artwork_ids`, `exhibition_ids`) to store related IDs. The interface is used to
+ensure type safety and consistency when working with product objects in TypeScript. */
 export interface IProduct {
   id: number;
   api_model: string;
@@ -22,15 +28,4 @@ export interface IProduct {
   source_updated_at: string;
   updated_at: string;
   timestamp: string;
-}
-
-export interface Info {
-  license_text: string;
-  license_links: string[];
-  version: string;
-}
-
-export interface Config {
-  iiif_url: string;
-  website_url: string;
 }

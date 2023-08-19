@@ -10,9 +10,12 @@ export class GalleryService extends BaseService<IPlaceResponse, IBaseParams> {
   constructor() {
     super({ path: paths.galleries });
   }
-  /**
-   ** GalleryService INSTANCE
-   */
+  
+/**
+ * The above function is a static method in TypeScript that returns a single instance of the
+ * GalleryService class using the Singleton design pattern.
+ * @returns The `getInstance` method returns an instance of the `GalleryService` class.
+ */
   public static get getInstance() {
     if (GalleryService.instance) return GalleryService.instance;
     else {

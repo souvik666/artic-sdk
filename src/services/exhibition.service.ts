@@ -11,9 +11,11 @@ export class ExhibitionsService extends BaseService<
   constructor() {
     super({ path: paths.exhibitions });
   }
-  /**
-   ** ExhibitionsService INSTANCE
-   */
+  
+ /**
+  * The above function is a singleton pattern implementation in TypeScript.
+  * @returns The `getInstance` method returns an instance of the `ExhibitionsService` class.
+  */
   public static get getInstance() {
     if (ExhibitionsService.instance) return ExhibitionsService.instance;
     else {

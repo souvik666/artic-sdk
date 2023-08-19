@@ -8,9 +8,11 @@ export class ProductService extends BaseService<IProductResponse, IBaseParams> {
   constructor() {
     super({ path: paths.products });
   }
-  /**
-   ** ProductService INSTANCE
-   */
+  
+ /**
+  * The above function is a singleton pattern implementation in TypeScript.
+  * @returns The getInstance method returns an instance of the ProductService class.
+  */
   public static get getInstance() {
     if (ProductService.instance) return ProductService.instance;
     else {

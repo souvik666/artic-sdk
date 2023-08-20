@@ -9,6 +9,7 @@ out/
 *.log
 yarn.lock
 npm-debug.log*
+lib/
 
 # Source Control Files
 .git/

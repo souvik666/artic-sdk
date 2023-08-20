@@ -1,14 +1,67 @@
-.*.swp
-._*
-.DS_Store
-.git
+# Files and Directories to Exclude from Published Node.js Package
+
+# Development and Build Files
+node_modules/
+dist/
+build/
+out/
+.eslintcache
+*.log
+yarn.lock
+npm-debug.log*
+
+# Source Control Files
+.git/
 .gitignore
-.hg
-.npmignore
+.gitattributes
+.github
+
+# Editor and IDE Files
+.idea/
+.vscode/
+.DS_Store
+
+# Build Tools and Configuration
+.babelrc
+.eslintrc
+.prettierrc
+tsconfig.json
+jest.config.js
+karma.conf.js
+webpack.config.js
+rollup.config.js
+
+# Tests and Development Files
+/test
+/tests
+/spec
+*test.js
+*.spec.js
+
+# Documentation
+/docs
+/doc
+/documentation
+*.md
+CHANGELOG
+
+# Examples and Demos
+/example
+/examples
+/demo
+/demos
+
+# Temporary and Cache Files
 .npmrc
-.lock-wscript
-.svn
-.wafpickle-*
-config.gypi
-CVS
-npm-debug.log
+.npmignore
+.yarnrc
+npm-debug.log*
+
+# CI/CD Configuration
+.travis.yml
+.gitlab-ci.yml
+.github/workflows/*
+
+# Miscellaneous
+CONTRIBUTING.md
+LICENSE

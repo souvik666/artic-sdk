@@ -1,6 +1,6 @@
 import { AxiosResponse } from "axios";
 import { IBaseResponse } from "./base.response.type";
-export interface IArtwork {
+export interface IArtworkC {
     search(params: IArtworkSearch): Promise<AxiosResponse<IArtworkResponse, any>>;
 }
 export type IArtworkResponse = IBaseResponse<IArtWork>;

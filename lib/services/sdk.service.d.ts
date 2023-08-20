@@ -1,9 +1,20 @@
 import { AgentService } from './agent.service';
+import { AgentTypeService } from './agentType.service';
+import { ArtWorkTypeService } from './artwork.type.service';
+import { ArtWorkDataQualifierService } from './artworkDataQualifier.service';
+import { ArtworkPlaceQualifierService } from './artworkPlaceQualifier.service';
 import { Artwork } from './artworks.service';
+import { CategoryTermService } from './categoryTerm.service';
 import { ExhibitionsService } from './exhibition.service';
 import { GalleryService } from './gallery.service';
+import { ImageService } from './images.service';
+import { MobileSoundService } from './mobileSound.service';
 import { PlaceService } from './place.service';
 import { ProductService } from './product.service';
+import { PublicationService } from './publications.service';
+import { SectionService } from './sections.service';
+import { SoundService } from './sound.service';
+import { VideoService } from './video.service';
 /**
  * @author souvik666
  * @copyright All The data in this response is licensed under a Creative Commons Zero (CC0) 1.0 designation and the Terms and Conditions of artic.edu
@@ -200,4 +211,17 @@ export declare class ArticSdk {
      * ```
      */
     static gallery: GalleryService;
+    static agentRoles: AgentService;
+    static agentType: AgentTypeService;
+    static artworkType: ArtWorkTypeService;
+    static artworkDataQualifier: ArtWorkDataQualifierService;
+    static artworkPlaceQualifier: ArtworkPlaceQualifierService;
+    static categoryTerm: CategoryTermService;
+    static publication: PublicationService;
+    static mobileSound: MobileSoundService;
+    static section: SectionService;
+    static image: ImageService;
+    static video: VideoService;
+    static sound: SoundService;
+    static text: SoundService;
 }

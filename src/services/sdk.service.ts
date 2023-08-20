@@ -1,9 +1,20 @@
 import { AgentService } from './agent.service';
+import { AgentTypeService } from './agentType.service';
+import { ArtWorkTypeService } from './artwork.type.service';
+import { ArtWorkDataQualifierService } from './artworkDataQualifier.service';
+import { ArtworkPlaceQualifierService } from './artworkPlaceQualifier.service';
 import { Artwork } from './artworks.service';
+import { CategoryTermService } from './categoryTerm.service';
 import { ExhibitionsService } from './exhibition.service';
 import { GalleryService } from './gallery.service';
+import { ImageService } from './images.service';
+import { MobileSoundService } from './mobileSound.service';
 import { PlaceService } from './place.service';
 import { ProductService } from './product.service';
+import { PublicationService } from './publications.service';
+import { SectionService } from './sections.service';
+import { SoundService } from './sound.service';
+import { VideoService } from './video.service';
 
 /**
  * @author souvik666
@@ -206,4 +217,24 @@ export class ArticSdk {
    * ```
    */
   public static gallery = GalleryService.getInstance;
+
+  public static agentRoles = AgentService.getInstance;
+
+  public static agentType = AgentTypeService.getInstance;
+
+  public static artworkType = ArtWorkTypeService.getInstance;
+
+  public static artworkDataQualifier = ArtWorkDataQualifierService.getInstance;
+  public static artworkPlaceQualifier =
+    ArtworkPlaceQualifierService.getInstance;
+
+  public static categoryTerm = CategoryTermService.getInstance;
+  public static publication = PublicationService.getInstance;
+  public static mobileSound = MobileSoundService.getInstance;
+  public static section = SectionService.getInstance;
+
+  public static image = ImageService.getInstance;
+  public static video = VideoService.getInstance;
+  public static sound = SoundService.getInstance;
+  public static text = SoundService.getInstance;
 }

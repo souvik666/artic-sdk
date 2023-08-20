@@ -1,6 +1,6 @@
 export interface IBaseResponse<T> {
     pagination: Pagination;
-    data: T[];
+    data: T;
     info: Info;
     config: Config;
 }
@@ -59,4 +59,13 @@ export interface IThumbnail {
     width?: number;
     height?: number;
     alt_text: string;
+}
+export interface IBAseQualifier {
+    id: number;
+    api_model: string;
+    api_link: string;
+    title: string;
+    source_updated_at: string;
+    updated_at: string;
+    timestamp: string;
 }

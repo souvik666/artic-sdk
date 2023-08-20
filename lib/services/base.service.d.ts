@@ -1,5 +1,5 @@
 import { AxiosResponse, AxiosRequestConfig } from 'axios';
-import { IBaseParams, IBaseSearchParams, IBaseSearchResponse } from '../interfaces/base.response.type';
+import { IBaseParams, IBaseResponse, IBaseSearchParams, IBaseSearchResponse } from '../interfaces/base.response.type';
 /**
  * The above type defines a generic interface for making GET requests with optional configuration and
  * parameters.
@@ -32,7 +32,7 @@ export declare class BaseService<T, PT> {
      * @param [args] - The `args` parameter is an optional object that contains the following properties: {config, params}
      * @returns a Promise that resolves to an AxiosResponse object.
      */
-    get(args?: IGet<PT>): Promise<AxiosResponse<T, any>>;
+    get(args?: IGet<PT>): Promise<AxiosResponse<IBaseResponse<T[]>, any>>;
     /**
      * The function `getOne` makes a GET request to a specified path with optional parameters and returns
      * a Promise containing the Axios response.
@@ -41,7 +41,7 @@ export declare class BaseService<T, PT> {
      */
     getOne(args: IGet<object> & {
         reference?: string | number;
-    }): Promise<AxiosResponse<T, any>>;
+    }): Promise<AxiosResponse<IBaseResponse<T>, any>>;
     /**
      * Searches based on the provided parameters.
      * Query Parameters for Artwork Search:

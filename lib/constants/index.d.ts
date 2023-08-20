@@ -8,4 +8,16 @@ export declare const paths: {
     products: string;
     texts: string;
     sounds: string;
+    images: string;
+    videos: string;
+    tours: string;
+    sections: string;
+    publications: string;
+    'artwork-types': string;
+    'artwork-date-qualifiers': string;
+    'artwork-place-qualifiers': string;
+    'agent-roles': string;
+    'agent-types': string;
+    'category-terms': string;
+    'mobile-sounds': string;
 };

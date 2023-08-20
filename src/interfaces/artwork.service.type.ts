@@ -6,7 +6,7 @@ includes interfaces for search parameters and response types. Additionally, it i
 import { AxiosResponse } from "axios";
 import { IBaseResponse } from "./base.response.type";
 
-export interface IArtwork {
+export interface IArtworkC {
   search(params: IArtworkSearch): Promise<AxiosResponse<IArtworkResponse, any>>;
 }
 

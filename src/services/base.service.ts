@@ -3,6 +3,7 @@ import { V1 } from '../constants';
 import _axios, { AxiosResponse, AxiosRequestConfig } from 'axios';
 import {
   IBaseParams,
+  IBaseResponse,
   IBaseSearchParams,
   IBaseSearchResponse,
 } from '../interfaces/base.response.type';
@@ -48,8 +49,8 @@ export class BaseService<T, PT> {
    * @param [args] - The `args` parameter is an optional object that contains the following properties: {config, params}
    * @returns a Promise that resolves to an AxiosResponse object.
    */
-  public get(args?: IGet<PT>): Promise<AxiosResponse<T, any>> {
-    return this.axios?.get<T>(this.path, {
+  public get(args?: IGet<PT>): Promise<AxiosResponse<IBaseResponse<T[]>, any>> {
+    return this.axios?.get<IBaseResponse<T[]>>(this.path, {
       ...args?.config,
       params: { ...args?.params },
     });
@@ -65,11 +66,15 @@ export class BaseService<T, PT> {
     args: IGet<object> & {
       reference?: string | number;
     },
-  ): Promise<AxiosResponse<T, any>> {
-    return this.axios?.get<T>(this.path + '/' + args?.reference, {
-      ...args?.config,
-      params: { ...args?.params },
-    });
+  ): Promise<AxiosResponse<IBaseResponse<T>, any>> {
+    
+    return this.axios?.get<IBaseResponse<T>>(
+      this.path + '/' + args?.reference,
+      {
+        ...args?.config,
+        params: { ...args?.params },
+      },
+    );
   }
   /**
    * Searches based on the provided parameters.

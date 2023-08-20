@@ -1,10 +1,10 @@
 import { paths } from "../constants";
 import { IBaseParams } from "../interfaces/base.response.type";
-import { IExhibitionResponse } from "../interfaces/exhibition.service.type";
+import { IExhibition } from "../interfaces/exhibition.service.type";
 import { BaseService } from "./base.service";
  
 export class ExhibitionsService extends BaseService<
-  IExhibitionResponse,
+  IExhibition,
   IBaseParams
 > {
   public static instance: ExhibitionsService | null = null;

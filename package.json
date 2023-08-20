@@ -11,7 +11,13 @@
     "lint": "tslint -p tsconfig.json",
     "dev": "rm -rf lib && tsc && node ./lib/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript sdk",
+    "Art Institute of Chicago API",
+    "Art Institute of Chicago API SDK",
+    "SDK",
+    "typescript"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -35,4 +41,4 @@
     "type": "git",
     "url": "git+https://github.com/souvik666/artic-sdk.git"
   }
-} 
+}

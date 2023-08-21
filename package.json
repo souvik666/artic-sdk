@@ -1,6 +1,6 @@
 {
   "name": "artic-sdk",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -41,6 +41,7 @@
     "type": "git",
     "url": "git+https://github.com/souvik666/artic-sdk.git"
   },
-  "contributors": ["souvik dutta"]
-  
+  "contributors": [
+    "souvik dutta"
+  ]
 }

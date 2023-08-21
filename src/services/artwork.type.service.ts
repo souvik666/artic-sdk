@@ -35,6 +35,7 @@ export class ArtWorkTypeService extends BaseService<
   }: IGet<Partial<IBaseSearchParams & IBaseParams>>): Promise<
     AxiosResponse<T & IBaseSearchResponse, any>
   > {
+    
     return super.search({ config, params });
   }
 

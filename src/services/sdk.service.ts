@@ -5,6 +5,7 @@ import { ArtWorkDataQualifierService } from './artworkDataQualifier.service';
 import { ArtworkPlaceQualifierService } from './artworkPlaceQualifier.service';
 import { Artwork } from './artworks.service';
 import { CategoryTermService } from './categoryTerm.service';
+import { EventsService } from './event.service';
 import { ExhibitionsService } from './exhibition.service';
 import { GalleryService } from './gallery.service';
 import { ImageService } from './images.service';
@@ -13,6 +14,7 @@ import { PlaceService } from './place.service';
 import { ProductService } from './product.service';
 import { PublicationService } from './publications.service';
 import { SectionService } from './sections.service';
+import { SitesService } from './sites.service';
 import { SoundService } from './sound.service';
 import { VideoService } from './video.service';
 
@@ -232,6 +234,10 @@ export class ArticSdk {
   public static publication = PublicationService.getInstance;
   public static mobileSound = MobileSoundService.getInstance;
   public static section = SectionService.getInstance;
+
+  public static sites = SitesService.getInstance;
+  public static event = EventsService.getInstance;
+
 
   public static image = ImageService.getInstance;
   public static video = VideoService.getInstance;

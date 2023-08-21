@@ -1,21 +1,35 @@
 import { AgentService } from './agent.service';
+import { AgentRole } from './agentRole.service';
 import { AgentTypeService } from './agentType.service';
+import { ArticleService } from './article.service';
 import { ArtWorkTypeService } from './artwork.type.service';
 import { ArtWorkDataQualifierService } from './artworkDataQualifier.service';
 import { ArtworkPlaceQualifierService } from './artworkPlaceQualifier.service';
 import { Artwork } from './artworks.service';
 import { CategoryTermService } from './categoryTerm.service';
+import { DigitalCatalogService } from './digitalCatalog.service';
+import { DigitalPublicationsService } from './digitalPublications.service';
+import { EducatorResourceService } from './educatorResource.service';
 import { EventsService } from './event.service';
+import { EventsOccurrenceService } from './eventOccurence.service';
+import { EventProgramService } from './eventProgram.service';
 import { ExhibitionsService } from './exhibition.service';
 import { GalleryService } from './gallery.service';
+import { GenericPageService } from './genericPage.service';
+import { HighlightService } from './highlight.service';
 import { ImageService } from './images.service';
 import { MobileSoundService } from './mobileSound.service';
 import { PlaceService } from './place.service';
+import { PressReleaseService } from './pressRelease.service';
+import { PrintedCatalogService } from './printedCatalog.service';
 import { ProductService } from './product.service';
 import { PublicationService } from './publications.service';
 import { SectionService } from './sections.service';
 import { SitesService } from './sites.service';
 import { SoundService } from './sound.service';
+import { StaticPageService } from './staticPage.service';
+import { TextService } from './text.service';
+import { TourService } from './tour.service';
 import { VideoService } from './video.service';
 
 /**
@@ -220,7 +234,7 @@ export class ArticSdk {
    */
   public static gallery = GalleryService.getInstance;
 
-  public static agentRoles = AgentService.getInstance;
+  public static agentRoles = AgentRole.getInstance;
 
   public static agentType = AgentTypeService.getInstance;
 
@@ -238,9 +252,28 @@ export class ArticSdk {
   public static sites = SitesService.getInstance;
   public static event = EventsService.getInstance;
 
+  public static staticPage = StaticPageService.getInstance;
+  public static genericPage = GenericPageService.getInstance;
+
+  public static eventOccurrence = EventsOccurrenceService.getInstance;
+  public static eventProgram = EventProgramService.getInstance;
+
+  public static digitalPublication = DigitalPublicationsService.getInstance;
+  public static digitalCatalog = DigitalCatalogService.getInstance;
+  public static printedCatalog = PrintedCatalogService.getInstance;
+
+  public static educatorResource = EducatorResourceService.getInstance;
+
+  public static highlight = HighlightService.getInstance;
+
+  public static pressRelease = PressReleaseService.getInstance;
+
+  public static article = ArticleService.getInstance;
+
+  public static tour = TourService.getInstance;
 
   public static image = ImageService.getInstance;
   public static video = VideoService.getInstance;
   public static sound = SoundService.getInstance;
-  public static text = SoundService.getInstance;
+  public static text = TextService.getInstance;
 }

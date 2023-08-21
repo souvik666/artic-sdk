@@ -4,8 +4,11 @@ import { IEventProgram } from '../interfaces/eventProgram.service.type';
 
 import { BaseService } from './base.service';
 
-export class EventsOccurrenceService extends BaseService<IEventProgram, IBaseParams> {
-  public static instance: EventsOccurrenceService | null = null;
+export class EventProgramService extends BaseService<
+  IEventProgram,
+  IBaseParams
+> {
+  public static instance: EventProgramService | null = null;
   constructor() {
     super({ path: paths['event-programs'] });
   }
@@ -15,10 +18,10 @@ export class EventsOccurrenceService extends BaseService<IEventProgram, IBasePar
    * @returns The `getInstance` method returns an instance of the `EventsOccurenceService` class.
    */
   public static get getInstance() {
-    if (EventsOccurrenceService.instance) return EventsOccurrenceService.instance;
+    if (EventProgramService.instance) return EventProgramService.instance;
     else {
-      EventsOccurrenceService.instance = new EventsOccurrenceService();
-      return EventsOccurrenceService.instance;
+      EventProgramService.instance = new EventProgramService();
+      return EventProgramService.instance;
     }
   }
 }

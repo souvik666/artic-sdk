@@ -16,6 +16,7 @@ export const paths = {
   videos: '/videos',
   tours: '/tours',
   sections: '/sections',
+  sites: '/sites',
   publications: '/publications',
   'artwork-types': '/artwork-types',
   'artwork-date-qualifiers': '/artwork-date-qualifiers',

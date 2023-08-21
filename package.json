@@ -1,6 +1,5 @@
 {
   "name": "artic-sdk",
-   
   "version": "2.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -19,7 +18,7 @@
     "SDK",
     "typescript"
   ],
-  "author": "souvik dutta",
+  "author": "https://github.com/souvik666",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^2.8.7",
@@ -41,5 +40,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/souvik666/artic-sdk.git"
-  }
+  },
+  "contributors": ["souvik dutta"]
 }

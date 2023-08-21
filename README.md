@@ -7,6 +7,11 @@ Welcome to the ArticSdk documentation! This document provides an in-depth overvi
 
 ## Install 
 
+## Using GITHUB
+```bash
+npm i -s git+ssh://git@github.com/souvik666/artic-sdk.git
+```
+
 ## Using NPM
 ```bash
 npm i artic-sdk

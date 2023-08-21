@@ -24,7 +24,7 @@ npm i artic-sdk
 Getting started with the `ArticSdk` is easy! Begin by importing the class and utilizing its service instances in your application. This example showcases how to get started:
 
 ```typescript
-import { ArticSdk } from 'path-to-your-sdk';
+import { ArticSdk } from 'artic-sdk';
 
 // Access service instances
 const agentInstance = ArticSdk.agent;

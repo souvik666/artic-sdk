@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Welcome to the ArticSdk documentation! This document provides an in-depth overview of the `ArticSdk` class. Developed by **Souvik666**, this SDK serves as a gateway to the Artic Framework's diverse services and functionalities. With static properties, it offers seamless access to service instances designed to manage agents, artworks, exhibitions, products, places, and galleries.
+Welcome to the ArticSdk documentation! This document provides an in-depth overview of the `ArticSdk` class. Developed by **Souvik666**, this SDK serves as a gateway to the Artic Framework's diverse services and functionalities. With static properties, it offers seamless access to service instances designed to manage agents, artworks, exhibitions, products, places, and galleries and so on 
 
 ## Install 
 
